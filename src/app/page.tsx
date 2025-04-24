@@ -69,7 +69,7 @@ export default function Home() {
         <tbody>
           {filteredAdvocates.map((advocate) => {
             return (
-              <tr>
+              <tr key={advocate.id}>
                 <td>{advocate.firstName}</td>
                 <td>{advocate.lastName}</td>
                 <td>{advocate.city}</td>
